@@ -1,0 +1,51 @@
+// src/components/Registrox.jsx
+import React from "react";
+
+const Registrox = () => {
+  return (
+    <div style={{ maxWidth: "400px", margin: "0 auto", padding: "20px", border: "1px solid #ddd" }}>
+      <h1>Registro</h1>
+      <form>
+        {/* Nombre */}
+        <div>
+          <label htmlFor="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" />
+        </div>
+
+        {/* Apellido */}
+        <div>
+          <label htmlFor="apellido">Apellido:</label>
+          <input type="text" id="apellido" name="apellido" />
+        </div>
+
+        {/* Email */}
+        <div>
+          <label htmlFor="email">Email:</label>
+          <input type="email" id="email" name="email" />
+        </div>
+
+        {/* Teléfono */}
+        <div>
+          <label htmlFor="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" />
+        </div>
+
+        {/* Contraseña */}
+        <div>
+          <label htmlFor="password">Contraseña:</label>
+          <input type="password" id="password" name="password" />
+        </div>
+
+        {/* Confirmar Contraseña */}
+        <div>
+          <label htmlFor="confirmarPassword">Confirmar Contraseña:</label>
+          <input type="password" id="confirmarPassword" name="confirmarPassword" />
+        </div>
+
+        <button type="submit">Registrar</button>
+      </form>
+    </div>
+  );
+};
+
+export default Registrox; 
